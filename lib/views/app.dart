@@ -1,5 +1,6 @@
 
 import 'package:flutter/material.dart';
+import 'package:fx_app_challenge/views/ui/home_page.dart';
 
 class FxApp extends StatelessWidget {
   const FxApp({super.key});
@@ -13,7 +14,7 @@ class FxApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
       ),
-      home: Container(),
+      home: const HomePage(),
     );
   }
 }

@@ -1,6 +1,19 @@
 
 class Currency {
-  final String name;
+  final List<String> currencies;
   
-  Currency(this.name);
+  Currency({required this.currencies});
+
+
+  factory Currency.fromJson(Map snapshot){
+    return Currency(
+      currencies : snapshot['currencies'] ?? [],
+    );
+  }
+
+  toJson() {
+    return {
+      "currencies": currencies,
+    };
+  }
 }
