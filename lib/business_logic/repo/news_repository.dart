@@ -3,7 +3,6 @@ import 'dart:convert';
 import 'package:fx_app_challenge/config/api_key.dart';
 import 'package:fx_app_challenge/config/base_urls.dart';
 import 'package:http/http.dart' as http;
-import 'dart:convert' as convert;
 import '../../config/constants.dart';
 import '../models/article.dart';
 
