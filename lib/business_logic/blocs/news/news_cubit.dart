@@ -3,10 +3,10 @@ import 'news_events.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'news_states.dart';
 
-class NewsBloc extends Bloc<NewsEvent, NewsState> {
+class NewsCubit extends Bloc<NewsEvent, NewsState> {
   final NewsRepository _newsRepository;
 
-  NewsBloc(this._newsRepository) : super(NewsLoadedState(const [])) {
+  NewsCubit(this._newsRepository) : super(NewsLoadedState(const [])) {
     on<LoadNewsEvent>((event, emit) async {
       emit(NewsLoadedState(const []));
       try {
